@@ -13,7 +13,7 @@ export const getUserData  = async  (req,res) =>{
                return res.json({success:false,message:'user not found'})
           }
 
-      res.json({
+     return res.json({
           success:true,
           userData:{
                name: user.name,
